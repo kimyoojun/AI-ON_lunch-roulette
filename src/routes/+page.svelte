@@ -1,2 +1,14 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation</p>
+<script>
+    import {goto} from "$app/navigation";
+
+    const menu_add = () => {
+        goto("/menu_add")
+    }
+
+
+</script>
+
+<div>
+    <h1>메뉴 추천</h1>
+    <button on:click={menu_add}>메뉴 추가</button>
+</div>
